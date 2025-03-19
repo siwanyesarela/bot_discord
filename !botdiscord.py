@@ -139,5 +139,7 @@ async def cek(ctx, server_name: str, *, query: str = None):
                     pass
             except asyncio.TimeoutError:
                 break
+from keep_alive import keep_alive  # Impor fungsi keep_alive
 
+keep_alive() 
 bot.run(TOKEN)
